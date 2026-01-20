@@ -181,7 +181,7 @@ export default function GithubDashboard() {
               <CardContent className="h-64">
                 <ResponsiveContainer>
                   <BarChart data={streakTimeline}>
-                    <XAxis dataKey="date" hide />
+                    <XAxis dataKey="date" tick={{ fill: darkMode ? "#e5e7eb" : "#1f2937" }} />
                     <YAxis tick={{ fill: darkMode ? "#e5e7eb" : "#1f2937" }} />
                     <Tooltip
                       contentStyle={{
