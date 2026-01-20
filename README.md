@@ -21,7 +21,7 @@ to display analytics and metrics for any GitHub user.
 - Tailwind CSS
 - shadcn/ui
 - Recharts
-- GitHub REST API
+- GitHub API
 
 ## ▶️ Running locally
 
