@@ -184,13 +184,19 @@ export default function GithubDashboard() {
                     <XAxis dataKey="date" tick={{ fill: darkMode ? "#e5e7eb" : "#1f2937" }} />
                     <YAxis tick={{ fill: darkMode ? "#e5e7eb" : "#1f2937" }} />
                     <Tooltip
+                      formatter={(value) => [value, "Atualizações de repositórios"]}
                       contentStyle={{
                         backgroundColor: darkMode ? "#ffffff" : "#000000",
-                        borderColor: darkMode ? "#1e293b" : "#e5e7eb",
+                        borderColor: darkMode ? "#000000" : "#ffffff",
+                      }}
+                      labelStyle={{
+                        color: darkMode ? "#000000" : "#ffffff",
+                      }}
+                      itemStyle={{
                         color: darkMode ? "#000000" : "#ffffff",
                       }}
                     />
-                    <Bar dataKey="activity" />
+                    <Bar dataKey="activity" fill={darkMode ? "#ffffff" : "#000000"} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
