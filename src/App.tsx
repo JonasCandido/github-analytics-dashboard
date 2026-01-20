@@ -158,7 +158,7 @@ export default function GithubDashboard() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Linguagens</CardTitle>
+                <CardTitle>Quantidade de repositórios que usam certa linguagem</CardTitle>
               </CardHeader>
               <CardContent className="h-64">
                 <ResponsiveContainer>
@@ -184,7 +184,7 @@ export default function GithubDashboard() {
                     <XAxis dataKey="date" tick={{ fill: darkMode ? "#e5e7eb" : "#1f2937" }} />
                     <YAxis tick={{ fill: darkMode ? "#e5e7eb" : "#1f2937" }} />
                     <Tooltip
-                      formatter={(value) => [value, "Atualizações de repositórios"]}
+                      formatter={(value) => [value, "Repositórios atualizados"]}
                       contentStyle={{
                         backgroundColor: darkMode ? "#ffffff" : "#000000",
                         borderColor: darkMode ? "#000000" : "#ffffff",
